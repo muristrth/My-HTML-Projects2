@@ -1,0 +1,324 @@
+/* Set up the container for the scrolling text */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Style for the scrolling text */
+.marquee-text {
+  display: inline-block;
+  padding-left: 0%; /* Initial position off-screen */
+  animation: marquee 10s linear infinite; /* Adjust animation duration */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  50% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+h1{
+    color: black;
+    font: size 300%;
+    font-family:Times;
+    text-align:center
+}
+hr{
+    margin: 0em;
+    border-width: 1px;
+    border-color: #ffffff;
+}
+.copy{
+  margin-top: 30px; 
+  outline: none; 
+  cursor: pointer; 
+  font-family:Helvetica;
+  text-align: left; 
+  font-size: 20px
+}
+.headline1{
+  font-family: "Bree+Serif";
+  font-size: 80px; 
+  text-align: center;
+}
+.headline{
+  font-family: "Bree+Serif";
+  font-size: 60px; 
+  text-align: center;   
+}
+.headline2{
+  font-size:26px;
+  font-family: "Bree+Serif";
+  text-align: center;  
+}
+
+body{
+    background-color: white;
+    color: black;
+    margin: 1mm 50mm;
+    
+}
+.warning{
+  text-align: center; 
+  font-size: 30px; 
+  background-color: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255); 
+  border-color: rgb(233, 83, 19);
+  margin-top: 35px; 
+  outline: none; 
+  cursor: pointer; 
+  background-color: rgb(0, 0, 0); 
+  font-family: Oswald;
+
+}
+.form{
+    color:black;
+    text-decoration: wavy;
+    margin-top: 35px; 
+    outline: none; 
+    cursor: pointer; 
+    background-color: rgb(197, 238, 199); 
+    font-family: Oswald, Helvetica, sans-serif !important;
+    text-align: left; 
+    font-size: 20px;
+
+}
+.img{
+    background-color: #ffffff;
+    text-align: center; 
+}
+aside{
+    text-align: center;
+    width: "400";
+    height: "200";
+}
+.intro{
+    font-family: Helvetica;
+    border-radius: 1px;
+    border-color: black;
+}
+.topnav{
+  background-color: aquamarine;
+  overflow: hidden;
+}
+.topnav a{
+  color: black;
+  float: left;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  padding: 14px 16px;
+}
+.topnav a:hover{
+  color: white;
+  background-color: green;
+  text-decoration: none;
+}
+.top-nav-right{
+  float: right;
+}
+.navbar {
+  background-color: aquamarine;
+}
+
+.navbar-brand {
+  color: black; /* Change navbar brand color */
+}
+
+.navbar-nav .nav-link {
+  color: black; /* Change navbar link color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(206, 240, 204);
+}
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.button{
+  font-size: 24px;
+  font-family: Impact;
+  background-color: rgb(187, 240, 187);
+  color: rgb(2, 39, 2);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 100px;
+}
+.button:hover{
+  color: rgb(255, 255, 255);
+  background-color: black;
+  text-decoration: none;
+}
+
+/* Extra styles for the button */
+.button2 {
+  font-size: 15px;
+  font-family: Impact;
+  color: black;
+  padding: 10px 15px;
+  margin: 6px 0;
+  background-color: rgb(187, 240, 187);
+  float: left;
+  width: 50%;
+}
+.button2:hover{
+  color: rgb(255, 255, 255);
+  background-color: black;
+  text-decoration: none;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #6e6c6c;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.profile-header {
+    text-align: center;
+}
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.profile-bio {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.profile-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.profile-details li {
+    margin-bottom: 10px;
+}
+.profile-details li span {
+    font-weight: bold;
+}
+.social-links {
+  color: black;
+  text-align: center;
+
+}
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .button2 {
+    width: 100%;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+input[type="text"], input[type="password"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
