@@ -152,11 +152,39 @@ aside{
 }
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+input{
+  color: black;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+  padding-left: 1.5rem;
+  font-size: 15px;
 }
+.input-group{
+  padding:1% 0;
+  position: relative;
+}
+.input-group i{
+  position: absolute;
+  color: black;
+}
+input:focus{
+  background-color: transparent;
+  outline: transparent;
+  border-bottom: 2px solid hsl(329,90%,28%);
+}
+input::placeholder{
+  color: #757575
+}
+.or{
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.icons{
 
+}
 /* Set a style for all buttons */
 .button{
   font-size: 24px;
@@ -179,14 +207,17 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Extra styles for the button */
 .button2 {
-  font-size: 15px;
-  font-family: Impact;
+  font-size: 1.1rem;
+  padding:8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 60%;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
-  padding: 10px 15px;
-  margin: 6px 0;
   background-color: rgb(187, 240, 187);
-  float: left;
-  width: 50%;
+  text-align: center;
 }
 .button2:hover{
   color: rgb(255, 255, 255);

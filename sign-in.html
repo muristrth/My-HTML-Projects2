@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -47,40 +48,13 @@
     <form class="modal-content" action="profile.php" method="post" onsubmit="return validateSignInForm()">
         <div class="container">
           <h1>Sign In</h1>
-          <label for="text"><b>Email</b></label>
+          <i class="fas fa-envelope"></i>
           <input type="text" placeholder="Enter Email" name="email" required><br><br>
-    
-          <label for="psw"><b>Password</b></label>
+          <i class="fas fa-lock"></i>
           <input type="text" placeholder="Enter Password" name="psw" required><br><br>
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me<br><br>
-          </label><br>
           <button type="submit" class="button2">Sign In</button>
           </div>
      </form>
-<script>
-function validateEmail(email) {
-    const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return re.test(email);
-}
-
-function validateSignInForm() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('psw').value;
-
-    if (!validateEmail(email)) {
-        alert("Please enter a valid email address.");
-        return false;
-    }
-
-    if (password === "") {
-        alert("Please enter your password.");
-        return false;
-    }
-
-    return true;
-}
-</script>
      <br><br><br><br><br><br>
   <footer style="padding: 20px; text-align: center;">
     <div style="max-width: 1200px; margin: 0 auto;">

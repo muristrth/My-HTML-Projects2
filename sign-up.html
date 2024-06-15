@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,58 +47,32 @@
     </nav>
 <hr>
 <br><br><br>
-    <form class="modal-content" id="sign-up-form" action="action.php" method="post" onsubmit="return validateSignUpForm()">
+    <form class="modal-content" id="sign-up-form" action="action.php" method="post">
         <div class="container">
         <h1>Sign Up</h1>
-        <label for="name"><b>Full Name</b></label>
-        <input type="text" id="name" placeholder="Enter Full Name" name="name" required><br><br>
-        <label for="tel"><b>Phone Number</b></label>
-        <input type="text" placeholder="Enter Phone Number" name="tel" required><br><br>
-        <label for="email"><b>Email</b></label>
-        <input type="text" id="email" placeholder="Enter Email" name="email" required><br><br>
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+        <i class="fas fa-user"></i>
+        <input type="text" id="name" placeholder="Full Name" name="name" required><br><br>
+        <i class="fas fa-phone"></i>
+        <input type="text" placeholder="Phone Number" name="tel" required><br><br>
+        <i class="fas fa-envelope"></i>
+        <input type="text" id="email" placeholder="Email" name="email" required><br><br>
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" name="psw" required><br><br>
         <button type="submit" class="button2">Sign Up</button>
-    </form>
+    </form><br><br>
+    <p class="or">
+       <br> -------------------or------------------
+    </p>
+    <div class="icons">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+    </div>
+    <div class="links">
+        <p>Already Have an Account ?</p>
+        <a class="button2" href="./sign-in.html">Sign In</button>
+    </div>
 </div>
 
-<script>
-function validateEmail(email) {
-    const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return re.test(email);
-}
-
-function validateName(name) {
-    const re = /^[a-zA-Z\s]+$/;
-    return re.test(name);
-}
-
-function validateSignUpForm() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('psw').value;
-    const passwordRepeat = document.getElementById('psw-repeat').value;
-
-    if (!validateName(name)) {
-        alert("Please enter a valid name (letters and spaces only).");
-        return false;
-    }
-
-    if (!validateEmail(email)) {
-        alert("Please enter a valid email address.");
-        return false;
-    }
-
-    if (password !== passwordRepeat) {
-        alert("Passwords do not match.");
-        return false;
-    }
-
-    return true;
-}
-</script>
 <br><br><br><br><br><br>
   <footer style="padding: 20px; text-align: center;">
     <div style="max-width: 1200px; margin: 0 auto;">
