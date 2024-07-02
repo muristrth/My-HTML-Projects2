@@ -288,7 +288,7 @@ I’m talking about an Investment formula where you never have to wonder, “Is 
     </div><br><br>
     <a href="sign-up.html">
     <button class="button" type="button">Yes! I'm Ready To Turn My Calls Into CASH Using The EXACT Hustler Installation System</button></a><br><br><br><br><br><br>
-    <?php include('templates/footer.php'); ?>
+    <?php include_once("templates/footer.php"); ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
