@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('templates/header.php'); ?>
+<?php include_once("templates/header.php"); ?>
 
 <body>
-    <?php include('templates/navbar.php'); ?>
+    <?php include_once("templates/navbar.php"); ?>
 <hr>
 <br>
 <div class="marquee-container">
@@ -288,23 +288,7 @@ I’m talking about an Investment formula where you never have to wonder, “Is 
     </div><br><br>
     <a href="sign-up.html">
     <button class="button" type="button">Yes! I'm Ready To Turn My Calls Into CASH Using The EXACT Hustler Installation System</button></a><br><br><br><br><br><br>
-    <footer style="padding: 20px; text-align: center;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                <a href="./contact.html"><h3>Talk To Us</h3></a>
-                </div>
-            <div>
-                <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
-        </div>
-        <hr style="margin: 20px 0;">
-        <p>&copy; 2024 Hustler Income Expert. All rights reserved.</p>
-    </div>
-</footer>
+    <?php include('templates/footer.php'); ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
